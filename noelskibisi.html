@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Noel - Trần Bình Minh A</title>
+    <style>
+        body {
+            margin: 30px;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #ffefef, #e0f7fa);
+            color: #333;
+        }
+
+        h1 {
+            color: #c62828;
+            text-align: center;
+        }
+
+        h3 {
+            border: 2px solid #2e7d32;
+            padding: 20px;
+            background-color: #e8f5e9;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 12px;
+            margin: 15px 0;
+        }
+
+        video {
+            width: 100%;
+            border-radius: 12px;
+            margin: 15px 0;
+        }
+
+        button {
+            padding: 12px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            background-color: #d32f2f;
+            color: white;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #9a0007;
+        }
+
+        form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #555;
+        }
+    </style>
+
+    <script>
+        function submitForm() {
+            alert("🎄 Chúc bạn Giáng Sinh an lành! Thông tin đã được gửi thành công 🎅");
+        }
+
+        function wish() {
+            alert("✨ Merry Christmas from Trần Bình Minh ✨");
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>🎄 Giáng Sinh An Lành 🎄</h1>
+
+        <h3>Trần Bình Minh</h3>
+
+        <p>
+            Chào mừng bạn đến với trang web Noel của <strong>Trần Bình Minh</strong>.
+            Chúc bạn một mùa Giáng Sinh ấm áp, hạnh phúc và tràn đầy niềm vui 🎁
+        </p>
+
+        <!-- Hình ảnh Noel -->
+        <img src="https://images.unsplash.com/photo-1543589077-47d81606c1bf" alt="Noel">
+
+        <!-- Video Noel -->
+        <video controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Trình duyệt của bạn không hỗ trợ video.
+        </video>
+
+        <!-- Nút bấm -->
+        <button onclick="wish()">Gửi lời chúc Noel 🎅</button>
+
+        <!-- Form submit -->
+        <form onsubmit="submitForm(); return false;">
+            <h2>🎁 Gửi lời chúc cho Minh</h2>
+
+            <label>Họ và tên:</label>
+            <input type="text" placeholder="Nhập tên của bạn" required>
+
+            <label>Email:</label>
+            <input type="email" placeholder="Nhập email" required>
+
+            <label>Lời chúc:</label>
+            <textarea rows="4" placeholder="Nhập lời chúc Noel..." required></textarea>
+
+            <button type="submit">Gửi lời chúc 🎄</button>
+        </form>
+
+        <footer>
+            © 2025 - Noel cùng Trần Bình Minh ❄️
+        </footer>
+    </div>
+</body>
+</html>
